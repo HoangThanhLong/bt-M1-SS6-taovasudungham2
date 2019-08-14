@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<p>Chu vi: <br>
+    Nhập bán kính: <input type="text" id="num1"><input type="button" value="Kết Quả" onclick="chuVi()"><br></p>
+<p>Diện tích: <br>
+Nhập bán kính: <input type="text" id="num2"><input type="button" value="Kết Quả" onclick="dienTich()"><br></p>
+<p id="result"></p>
+<script>
+    function chuVi() {
+        let num = parseInt(document.getElementById("num1").value);
+        let sum = num * 2 * Math.PI;
+        document.getElementById("result").innerHTML = sum;
+    }
+    function dienTich() {
+        let num = parseInt(document.getElementById("num2").value);
+        let sum = num * num * Math.PI;
+        document.getElementById("result").innerHTML = sum;
+    }
+</script>
+</body>
+</html>

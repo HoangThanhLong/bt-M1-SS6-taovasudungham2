@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+// Tự Hủy
+<input type="text" id="num1">
+<input type="button" value="Kiểm tra" onclick="checkNum()">
+<script>
+    function checkNum() {
+        let arr = [6 , 8, 9, 6, 3, 6, 9, 7];
+        let arrChar = arr.split("");
+        let newArr = arr.filter(function (item) {
+            return (item == characters);
+        });
+        console.log(newArr);
+        if (newArr.length !== 0){
+            alert('Có' + newArr.length + " kí tự " + characters + " trong chuỗi" + arr);
+        }
+    }
+</script>
+</body>
+</html>

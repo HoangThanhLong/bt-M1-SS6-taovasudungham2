@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HI</title>
+</head>
+<body>
+<input type="text" id="num">
+<input type="button" value="Kết Quả" onclick="giaiThua()">
+<p id="Result"></p>
+<script>
+    function giaiThua() {
+        let num = parseInt(document.getElementById("num").value);
+        let fact = 1;
+        for (i = 1; i <= num; i++){
+            fact = fact * i;
+        }
+        document.getElementById("Result").innerHTML = fact;
+    }
+</script>
+</body>
+</html>
